@@ -1,0 +1,13 @@
+USE [Soccer stats]
+GO
+
+DROP PROC undo4
+GO
+
+CREATE PROCEDURE undo4
+AS
+BEGIN
+	ALTER TABLE Boots
+	DROP COLUMN Color
+END
+GO

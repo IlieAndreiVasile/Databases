@@ -1,0 +1,13 @@
+USE [Soccer stats]
+GO
+
+DROP PROC undo5
+GO
+
+CREATE PROCEDURE undo5
+AS
+BEGIN
+	ALTER TABLE Fans
+	DROP CONSTRAINT fk_Fans_Clubs
+END
+GO
